@@ -40,9 +40,12 @@ body{
 }
 /*----start-header----*/
 .header{
-	background:url(../images/bg.png) no-repeat;
-	min-height:600px;
-	background-size:100%;
+	background:url(../images/banner.png) no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 /*----header-left----*/
 .header-left{
@@ -54,7 +57,7 @@ body{
 	width:466px;
 	height:547px;
 	display:block;
-	background:url(../images/headlogo.png) no-repeat;
+	/*background:url(../images/headlogo.png) no-repeat;*/
 }
 /*---header-right----*/
 .header-right{
@@ -62,12 +65,17 @@ body{
 	width: 54%;
 	margin-top: 13%;
 }
+.phone-right{
+	float: right;
+	width: 54%;
+}
 .logo img{
 	display:block;
 }
 coverheader{
 	font-family: badaboom;
-	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	font-size: 2.25em;
+	text-shadow: 5px 5px 2px black, 0 0 25px black, 0 0 5px black;
 }
 slogan{
 	font-family: badaboom;
@@ -213,7 +221,7 @@ slogan{
 	float:left;
 }
 .footer-left span{
-	color:#F03D87;
+	color:red;
 }
 .footer-left p,.footer-right p{
 	font-size:0.875em;
@@ -233,7 +241,7 @@ slogan{
 	float:right;
 }
 .copyright {
-	color: #808080;
+	color: red;
 	padding-top: 10px;
 	margin-bottom: 50px;
 }
@@ -413,6 +421,12 @@ popup{
 	.header-right p {
 		width: 84%;
 	}
+	.phone-right {
+		width: 52%;
+	}
+	.phone-right p {
+		width: 84%;
+	}
 	.downloadbtn {
 		font-size: 0.9em;
 	}
@@ -436,6 +450,12 @@ popup{
 		width: 52%;
 	}
 	.header-right p {
+		width: 84%;
+	}
+	.phone-right {
+		width: 52%;
+	}
+	.phone-right p {
 		width: 84%;
 	}
 	.downloadbtn {
@@ -488,6 +508,13 @@ popup{
 		width: 52%;
 	}
 	.header-right p {
+		width: 100%;
+		font-size: 1.5em;
+	}
+	.phone-right {
+		width: 52%;
+	}
+	.phone-right p {
 		width: 100%;
 		font-size: 1.5em;
 	}
@@ -551,6 +578,12 @@ popup{
 		font-size: 1.5em;
 		margin: 0.5em auto 0.6em auto;
 	}
+	.phone-right {
+		width:100%;
+	}
+	.phone-right p {
+		width: 60%;
+	}
 	.downloadbtn {
 		font-size: 0.9em;
 	}
@@ -568,6 +601,9 @@ popup{
 	}
 	.header-right {
 		margin-top: 4%;
+		text-align: center;
+	}
+	.phone-right {
 		text-align: center;
 	}
 	.divice-fea-left-grid p {
@@ -598,7 +634,6 @@ popup{
 		width:150px;
 		height:301px;
 		display:block;
-		background:url(../images/header-small.png) no-repeat;
 		margin: 0 auto;
 	}
 	.divice-fea-left label{
